@@ -74,7 +74,7 @@ If the issue persists, checking the error logs can provide more details.
 ---
 
 ### ✅ **Final Thoughts:**  
-By following the steps above, you should be able to resolve the **"MySQL shutdown unexpectedly"** issue in XAMPP. If the problem persists, feel free to open an issue with the relevant log details for further help.
+By following the steps above, you should be able to resolve the **"MySQL shutdown unexpectedly"** issue in XAMPP.
 
 ---
 
