@@ -1,4 +1,3 @@
----
 ### 🐛 **MySQL shutdown unexpectedly error in XAMPP – Causes & Solutions**
 
 ### 🚨 **Issue Description:**  
