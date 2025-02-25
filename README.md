@@ -1,6 +1,6 @@
 ---
 
-### 🐛 **MySQL shutdown unexpectedly error in XAMPP **
+### 🐛 **MySQL shutdown unexpectedly error in XAMPP**
 
 #### 🚨 **Issue Description:**  
 While running MySQL in XAMPP, you might encounter the following error:  
