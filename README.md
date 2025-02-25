@@ -1,37 +1,22 @@
-### 🐛 **MySQL shutdown unexpectedly error in XAMPP – Causes & Solutions**
+---
+
+### 🐛 **MySQL shutdown unexpectedly error in XAMPP **
 
 #### 🚨 **Issue Description:**  
 While running MySQL in XAMPP, you might encounter the following error:  
 ```
 Error: MySQL shutdown unexpectedly.
-This may be due to a blocked port, missing dependencies, 
+This may be due to a blocked port, missing dependencies,
 improper privileges, a crash, or a shutdown by another method.
 ```
 
-This error indicates that MySQL was stopped due to issues such as port conflicts, corrupted database files, configuration errors, or improper shutdowns.
+This error indicates that MySQL was stopped due to issues such as corrupted database files, configuration errors, or improper shutdowns.
 
 ---
 
 #### 🛠️ **Common Causes and Solutions:**
 
-### 1️⃣ **Port Conflict**  
-Another application (e.g., Skype, VMware, or certain Windows services) might be using MySQL’s default port (3306).
-
-✅ **Solution:**  
-- In XAMPP, click on **Config** next to MySQL and open the `my.ini` file.  
-- Locate the following lines:
-  ```ini
-  port=3306
-  ```
-- Change the port to a different one, such as `3307`:
-  ```ini
-  port=3307
-  ```
-- Save the file and restart MySQL.
-
----
-
-### 2️⃣ **Corrupted Database Files**  
+### 1️⃣ **Corrupted Database Files**  
 An improper shutdown can corrupt MySQL’s data files.
 
 ✅ **Solution:**  
@@ -46,12 +31,13 @@ An improper shutdown can corrupt MySQL’s data files.
    C:\xampp\mysql\backup
    ```
    into the new `data` folder.  
-5. From `data_old`, copy your database folders (excluding system folders like `mysql`, `performance_schema`, and `phpmyadmin`) into the new `data` folder.  
-6. Restart MySQL in XAMPP.
+5. From the `data_old` folder, **copy the `ibdata1` file** and paste it into the newly created `data` folder.  
+6. Copy your database folders (excluding system folders like `mysql`, `performance_schema`, and `phpmyadmin`) from `data_old` to the new `data` folder.  
+7. Restart MySQL in XAMPP.
 
 ---
 
-### 3️⃣ **Corrupted Log Files (ib_logfile0, ib_logfile1)**  
+### 2️⃣ **Corrupted Log Files (ib_logfile0, ib_logfile1)**  
 Sometimes, internal log files cause the shutdown.
 
 ✅ **Solution:**  
@@ -59,14 +45,14 @@ Sometimes, internal log files cause the shutdown.
   ```
   C:\xampp\mysql\data
   ```
-- Delete the following files:  
+- Delete the following files (if they exist):  
   - `ib_logfile0`  
   - `ib_logfile1`  
 - Restart MySQL. (These files will be automatically recreated.)
 
 ---
 
-### 4️⃣ **Insufficient Privileges**  
+### 3️⃣ **Insufficient Privileges**  
 Running XAMPP without administrative rights may cause MySQL to fail.
 
 ✅ **Solution:**  
@@ -76,7 +62,7 @@ Running XAMPP without administrative rights may cause MySQL to fail.
 
 ---
 
-### 5️⃣ **Check the MySQL Error Log**  
+### 4️⃣ **Check the MySQL Error Log**  
 If the issue persists, checking the error logs can provide more details.
 
 ✅ **Solution:**  
