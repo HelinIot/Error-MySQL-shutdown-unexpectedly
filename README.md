@@ -10,7 +10,7 @@ This may be due to a blocked port, missing dependencies,
 improper privileges, a crash, or a shutdown by another method.
 ```
 
-This error indicates that MySQL was stopped due to issues such as port conflicts, corrupted database files, configuration errors, or improper shutdowns.
+This error indicates that MySQL was stopped due to issues such as corrupted database files, configuration errors, or improper shutdowns.
 
 ---
 
@@ -79,3 +79,4 @@ If the issue persists, checking the error logs can provide more details.
 By following the steps above, you should be able to resolve the **"MySQL shutdown unexpectedly"** issue in XAMPP. If the problem persists, feel free to open an issue with the relevant log details for further help.
 
 ---
+
