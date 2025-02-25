@@ -2,19 +2,19 @@
 
 ### 🐛 **MySQL shutdown unexpectedly error in XAMPP – Causes & Solutions**
 
-### 🚨 **Issue Description:**  
+#### 🚨 **Issue Description:**  
 While running MySQL in XAMPP, you might encounter the following error:  
 ```
 Error: MySQL shutdown unexpectedly.
-This may be due to a blocked port, missing dependencies,
+This may be due to a blocked port, missing dependencies, 
 improper privileges, a crash, or a shutdown by another method.
 ```
 
-This error indicates that MySQL was stopped due to issues such as corrupted database files, configuration errors, or improper shutdowns.
+This error indicates that MySQL was stopped due to issues such as port conflicts, corrupted database files, configuration errors, or improper shutdowns.
 
 ---
 
-### 🛠️ **Common Causes and Solutions:**
+#### 🛠️ **Common Causes and Solutions:**
 
 ### 1️⃣ **Corrupted Database Files**  
 An improper shutdown can corrupt MySQL’s data files.
